@@ -1,0 +1,235 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/Green\ and\ Pink\ Surf\ Illustration\ Border\ A4\ Document.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.header {
+
+    color: #fff;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinhar o texto ao centro */
+}
+
+/* Estilo para a navegação */
+.navbar {
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: #d5d3d3;
+    /* Cor de fundo */
+    list-style-type: none;
+    /* Remove os marcadores da lista*/
+    margin: 0;
+    /* Remove as margens padrão */
+    padding: 15px;
+    /* Remove o espaçamento interno padrão */
+    text-align: center;
+    background-color: rgb(9, 119, 64);
+    border-radius: 5px;
+
+}
+
+/* Estilo para os itens da lista de navegação */
+.navbar a {
+    display: inline;
+    /* Exibe os itens da lista em linha */
+    margin-right: 20px;
+    /* Adiciona um espaçamento entre os itens */
+    color: #333;
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+    transition: color 0.3s;
+    /* Transição suave de cor */
+}
+
+/* Estilo de hover para os links na lista de navegação */
+.navbar a:hover {
+    color: #b32020;
+    /* Cor do texto ao passar o mouse */
+}
+
+
+.logo {
+    width: 150px;
+    padding-left: 20%;
+    margin-top: 60px;
+}
+
+.menu {
+    border-radius: 30px;
+}
+
+.cdLanches,
+.cdSalgados,
+.cdPorcoes,
+.cdSucos,
+.cdmini,
+.cdEspeciais {
+    /*background-color: #ccc;*/
+    border-radius: 25px;
+    width: 60%;
+    padding: 20px;
+    padding-left: 120px;
+    margin-left: 50px;
+    color: #161414;
+    background: rgb(197, 167, 14);
+    margin-top: 10%;
+}
+
+.cdLanches {
+    color: #161414;
+    background: rgb(197, 167, 14);
+    margin-top: 10%;
+}
+
+.addcarrinho {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.menu,
+#carrinho {
+    width: 100%;
+    float: none;
+    margin-left: 30px;
+}
+
+h1 {
+    margin-left: 20%;
+}
+
+h2 {
+    margin-top: 20px;
+    
+}
+
+ul {
+    list-style: none;
+    
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#endereco-input, #nome-input {
+    border-radius: 5px;
+}
+
+#itens-carrinho  {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    max-width: 50%;
+    overflow-y: auto;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#itens-carrinho ul {
+    margin-bottom: 5px;
+}
+
+#itens-carrinho li {
+    margin-bottom: 5px;
+    
+}
+
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(9, 119, 64);
+}
+
+button:hover {
+    background-color: #f4f4f4;
+}
+
+#total {
+    font-weight: bold;
+}
+
+#endereco,
+#metodo-pagamento {
+    display: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    /* Ajuste o tamanho do texto */
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        margin-left: -30px;
+    }
+
+    ul {
+        margin-left: -100px;
+    }
+
+    .menu {
+        margin-left: -40px;
+    }
+
+    /* Centralize o cabeçalho */
+    .header {
+        padding-top: 5px;
+    }
+
+    /* Ajuste o tamanho da logo */
+    .logo {
+        width: 100px;
+        padding-left: 40%;
+        margin-top: 70px;
+    }
+
+    /* Ajuste o tamanho dos itens do menu */
+    .navbar a {
+        font-size: 16px;
+    }
+
+    /* Ajuste o espaçamento dos itens do menu */
+    .navbar {
+        padding: 5px;
+    }
+
+    /* Ajuste o tamanho dos itens do carrinho */
+    #itens-carrinho li {
+        font-size: 14px;
+    }
+
+    /* Ajuste de caixa de itens */
+    #itens-carrinho {
+        margin-left: 5px;
+    }
+
+    #carrinho h2 {
+        padding-left: 30px;
+    }
+
+    /* Ajuste o tamanho do botão */
+    button {
+        padding: 8px;
+    }
+
+    /* Exiba os campos de endereço e método de pagamento */
+    #endereco,
+    #metodo-pagamento,
+    #nome {
+        display: block;
+        margin-top: 20px;
+    }
+}
